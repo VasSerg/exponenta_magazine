@@ -506,6 +506,15 @@ async function openRelease(stat,num){
   menub.classList.add('vertical');
   menub.classList.remove('menub');
 
+  button.classList.remove('longbut');
+  b.classList.remove('longbut');
+  bp.classList.remove('longbut');
+  br.classList.remove('longbut');
+  ba.classList.remove('longbut');
+  bp.classList.remove('longbut');
+  bb.classList.remove('longbut');
+  bh.classList.remove('longbut');
+
   try{
     clicked.classList.remove("locked-button");
   } catch(err){}
@@ -532,6 +541,16 @@ async function openArticle(stat,num,typ){
   hideAll();
   menub.classList.add('vertical');
   menub.classList.remove('menub');
+
+  button.classList.remove('longbut');
+  b.classList.remove('longbut');
+  bp.classList.remove('longbut');
+  br.classList.remove('longbut');
+  ba.classList.remove('longbut');
+  bp.classList.remove('longbut');
+  bb.classList.remove('longbut');
+  bh.classList.remove('longbut');
+
   try{
   clicked.classList.remove("locked-button")
   }catch(error){
@@ -760,6 +779,12 @@ function search(val){
 }
   
 async function init(){
+
+
+  podcamul.classList.add('hide');
+  podca.classList.add('hide');
+  bp.classList.add('hide');
+
   //load article if open
   var searchString = window.location.search.substring(1),
     i, val, params = searchString.split("&");
