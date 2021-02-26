@@ -256,7 +256,6 @@ function hideAll(){
   bp.classList.add('longbut');
   br.classList.add('longbut');
   ba.classList.add('longbut');
-  bp.classList.add('longbut');
   bb.classList.add('longbut');
   bh.classList.add('longbut');
 
@@ -391,7 +390,6 @@ function changePage(event, ind){
         bp.classList.remove('longbut');
         br.classList.remove('longbut');
         ba.classList.remove('longbut');
-        bp.classList.remove('longbut');
         bb.classList.remove('longbut');
         bh.classList.remove('longbut');
 
@@ -450,7 +448,6 @@ function changePage(event, ind){
         bp.classList.remove('longbut');
         br.classList.remove('longbut');
         ba.classList.remove('longbut');
-        bp.classList.remove('longbut');
         bb.classList.remove('longbut');
         bh.classList.remove('longbut');
 
@@ -511,7 +508,6 @@ async function openRelease(stat,num){
   bp.classList.remove('longbut');
   br.classList.remove('longbut');
   ba.classList.remove('longbut');
-  bp.classList.remove('longbut');
   bb.classList.remove('longbut');
   bh.classList.remove('longbut');
 
@@ -547,7 +543,6 @@ async function openArticle(stat,num,typ){
   bp.classList.remove('longbut');
   br.classList.remove('longbut');
   ba.classList.remove('longbut');
-  bp.classList.remove('longbut');
   bb.classList.remove('longbut');
   bh.classList.remove('longbut');
 
@@ -781,9 +776,6 @@ function search(val){
 async function init(){
 
 
-  podcamul.classList.add('hide');
-  podca.classList.add('hide');
-  bp.classList.add('hide');
 
   //load article if open
   var searchString = window.location.search.substring(1),
